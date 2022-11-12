@@ -140,7 +140,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5168920551888554722}
         m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
-        m_MethodName: DDown
+        m_MethodName: MoveAxis
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -150,24 +150,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 77dd83f8-9af0-4862-88e8-4697f99e83d1
-    m_ActionName: DefaultActionMap/MoveRight[/Keyboard/d]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5168920551888554722}
-        m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
-        m_MethodName: ADown
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 7f559197-3b2f-4ca0-8a88-fbf1c482c42e
-    m_ActionName: DefaultActionMap/MoveLeft[/Keyboard/a]
+    m_ActionId: 23e8b86b-9e92-4972-bd87-eae3879e001e
+    m_ActionName: DefaultActionMap/Move[/Keyboard/a,/Keyboard/d]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: DefaultActionMap

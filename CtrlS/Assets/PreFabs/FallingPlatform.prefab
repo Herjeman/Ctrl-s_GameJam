@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4055845417399646378}
   - component: {fileID: 7796281404748450086}
   - component: {fileID: 4207318084387916240}
+  - component: {fileID: 9151471397321311671}
   m_Layer: 0
   m_Name: FallingPlatform
   m_TagString: Untagged
@@ -125,5 +126,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c326efc19486c346aed454e80513fa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &9151471397321311671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2454271948528588235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 433f9fa8ac2afd34c92490b486641100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
