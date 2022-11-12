@@ -8,6 +8,7 @@ public class InputManager : MonoBehaviour
     private static InputManager _instance;
 
     private bool _ctrlPressed;
+    [SerializeField] private PlayerMovement _playerMovement;
 
     private void Awake()
     {
@@ -55,6 +56,30 @@ public class InputManager : MonoBehaviour
         if (context.performed && _ctrlPressed)
         {
             OnLoad.Invoke();
+        }
+    }
+
+    public void SpaceDown(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            _playerMovement.Jump();
+        }
+    }
+    
+    public void DDown(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            _playerMovement.MoveRight();
+        }
+    }
+    
+    public void ADown(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            _playerMovement.MoveLeft();
         }
     }
 }
