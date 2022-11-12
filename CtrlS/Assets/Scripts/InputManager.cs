@@ -61,20 +61,25 @@ public class InputManager : MonoBehaviour
             _playerMovement.Jump();
         }
     }
-    
-    public void DDown(InputAction.CallbackContext context)
+
+    public void MoveAxis(InputAction.CallbackContext context)
     {
-        if (context.performed)
-        {
-            _playerMovement.MoveRight();
-        }
+        _playerMovement.SetMoveAxis(context.ReadValue<float>());
     }
     
-    public void ADown(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-            _playerMovement.MoveLeft();
-        }
-    }
+    // public void DDown(InputAction.CallbackContext context)
+    // {
+    //     if (context.performed)
+    //     {
+    //         _playerMovement.MoveRight();
+    //     }
+    // }
+    //
+    // public void ADown(InputAction.CallbackContext context)
+    // {
+    //     if (context.performed)
+    //     {
+    //         _playerMovement.MoveLeft();
+    //     }
+    // }
 }

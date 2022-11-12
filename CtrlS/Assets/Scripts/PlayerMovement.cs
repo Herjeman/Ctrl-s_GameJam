@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.PlayerLoop;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -16,7 +18,11 @@ public class PlayerMovement : MonoBehaviour
         _playerRb = GetComponent<Rigidbody>();
         _playerIp = GetComponent<PlayerInput>();
     }
-    
+
+    private void FixedUpdate()
+    {
+        Move();
+    }
 
     public void Jump()
     {
@@ -24,13 +30,24 @@ public class PlayerMovement : MonoBehaviour
         _playerRb.velocity = new Vector2(_playerRb.velocity.x, _jumpForce);
     }
 
-    public void MoveRight()
+    private void Move()
     {
-        _playerRb.AddForce(new Vector3(_moveSpeed * 100, 0, 0 ),ForceMode.Force);
+        _playerRb.velocity = new Vector2(_xAxis * _moveSpeed, _playerRb.velocity.y);
     }
     
-    public void MoveLeft()
+    public void SetMoveAxis(float axis)
     {
-        _playerRb.AddForce(new Vector3(-_moveSpeed * 100, 0, 0 ),ForceMode.Force);
+        _xAxis = axis;
+        Debug.Log(_xAxis);
     }
+    
+    // public void MoveRight()
+    // {
+    //     _playerRb.AddForce(new Vector3(_moveSpeed * 100, 0, 0 ),ForceMode.Force);
+    // }
+    //
+    // public void MoveLeft()
+    // {
+    //     _playerRb.AddForce(new Vector3(-_moveSpeed * 100, 0, 0 ),ForceMode.Force);
+    // }
 }
