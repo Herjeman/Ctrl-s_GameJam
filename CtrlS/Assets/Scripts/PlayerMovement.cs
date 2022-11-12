@@ -36,10 +36,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
-        if (IsGrounded())
-        {
-            _playerRb.velocity = new Vector2(_xAxis * _moveSpeed, _playerRb.velocity.y);
-        }
+        _playerRb.velocity = new Vector2(_xAxis * _moveSpeed, _playerRb.velocity.y);
+
+        //if (IsGrounded())
+        //{
+        //    _playerRb.velocity = new Vector2(_xAxis * _moveSpeed, _playerRb.velocity.y);
+        //}
     }
     
     public void SetMoveAxis(float axis)
@@ -47,19 +49,17 @@ public class PlayerMovement : MonoBehaviour
         _xAxis = axis;
         Debug.Log(_xAxis);
     }
-    
-    public bool IsGrounded()
+
+    private void OnTriggerEnter(Collider other)
     {
-        return Physics.CheckSphere(_groundCheck.position, 0.1f, _whatIsGround);
+        if (other.gameObject.CompareTag("Gate"))
+        {
+            other.gameObject.GetComponent<Gate>().Cycle();
+        }
     }
-    
-    // public void MoveRight()
-    // {
-    //     _playerRb.AddForce(new Vector3(_moveSpeed * 100, 0, 0 ),ForceMode.Force);
-    // }
-    //
-    // public void MoveLeft()
-    // {
-    //     _playerRb.AddForce(new Vector3(-_moveSpeed * 100, 0, 0 ),ForceMode.Force);
-    // }
+
+    //public bool IsGrounded()
+    //{
+    //    return Physics.CheckSphere(_groundCheck.position, 0.1f, _whatIsGround);
+    //}
 }
