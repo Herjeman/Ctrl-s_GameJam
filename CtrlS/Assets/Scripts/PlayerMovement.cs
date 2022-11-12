@@ -8,7 +8,6 @@ using UnityEngine.PlayerLoop;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody _playerRb;
-    private CircleCollider2D _playerFeet;
     private PlayerInput _playerIp;
     private float _xAxis;
     
@@ -20,7 +19,6 @@ public class PlayerMovement : MonoBehaviour
     {
         _playerRb = GetComponent<Rigidbody>();
         _playerIp = GetComponent<PlayerInput>();
-        _playerFeet = GetComponent<CircleCollider2D>();
     }
 
     private void FixedUpdate()

@@ -5,7 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AnnaScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Scene_One.unity
+    guid: 9a768dfe04cf0f84eb68b0281096aaaf
+  - enabled: 1
+    path: Assets/Scenes/Scene_Two.unity
+    guid: d386a0274e916b24c8a31a51b068c45f
+  - enabled: 1
+    path: Assets/Scenes/Scene_Three.unity
+    guid: e3f1f935aa789af4a8b2cf3f125a6319
+  - enabled: 1
+    path: Assets/Scenes/Scene_Four.unity
+    guid: c20fa66c4fffd344ebe1096edb98af3c
+  - enabled: 1
+    path: Assets/Scenes/Scene_Five.unity
+    guid: 5db56dd6e45040a4c82254a5ad7d8551
   m_configObjects: {}
