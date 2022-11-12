@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+
+    private int _levelIndex;
+    [SerializeField] private List<string> _levels;
 
     private void Awake()
     {
@@ -14,12 +18,14 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Destroy(this);
+            Destroy(this.gameObject);
         }
+        DontDestroyOnLoad(this.gameObject);
     }
 
     public void NextLevel()
     {
-        Debug.Log("Level competed");
+        SceneManager.LoadScene(_levels[_levelIndex]);
+        _levelIndex++;
     }
 }

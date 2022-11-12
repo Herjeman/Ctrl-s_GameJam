@@ -22,7 +22,7 @@ public class InputManager : MonoBehaviour
         }
         else
         {
-            Destroy(this);
+            Destroy(this.gameObject);
         }
     }
 
