@@ -30,18 +30,16 @@ public class PlayerMovement : MonoBehaviour
 
     public void Jump()
     {
-        Debug.Log("jump working");
-        _playerRb.velocity = new Vector2(_playerRb.velocity.x, _jumpForce);
+        if (IsGrounded())
+        {
+            Debug.Log("jump working");
+            _playerRb.velocity = new Vector2(_playerRb.velocity.x, _jumpForce); 
+        }
     }
 
     private void Move()
     {
         _playerRb.velocity = new Vector2(_xAxis * _moveSpeed, _playerRb.velocity.y);
-
-        //if (IsGrounded())
-        //{
-        //    _playerRb.velocity = new Vector2(_xAxis * _moveSpeed, _playerRb.velocity.y);
-        //}
     }
     
     public void SetMoveAxis(float axis)
@@ -58,8 +56,8 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    //public bool IsGrounded()
-    //{
-    //    return Physics.CheckSphere(_groundCheck.position, 0.1f, _whatIsGround);
-    //}
+    public bool IsGrounded()
+    {
+        return Physics.CheckSphere(_groundCheck.position, 0.1f, _whatIsGround);
+    }
 }
