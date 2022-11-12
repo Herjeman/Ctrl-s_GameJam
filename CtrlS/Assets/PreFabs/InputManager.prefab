@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa41b982c36a63340bc5b8101f67608d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerMovement: {fileID: 0}
 --- !u!114 &5168920551888554721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,6 +120,54 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: fc0b0db1-b715-482d-afb9-4373e26769e9
     m_ActionName: DefaultActionMap/Z[/Keyboard/z]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5168920551888554722}
+        m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
+        m_MethodName: SpaceDown
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 0389b994-1842-409a-854e-b4d5757403f8
+    m_ActionName: DefaultActionMap/Jump[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5168920551888554722}
+        m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
+        m_MethodName: DDown
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 77dd83f8-9af0-4862-88e8-4697f99e83d1
+    m_ActionName: DefaultActionMap/MoveRight[/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5168920551888554722}
+        m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
+        m_MethodName: ADown
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 7f559197-3b2f-4ca0-8a88-fbf1c482c42e
+    m_ActionName: DefaultActionMap/MoveLeft[/Keyboard/a]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: DefaultActionMap
