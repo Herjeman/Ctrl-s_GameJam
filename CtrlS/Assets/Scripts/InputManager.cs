@@ -34,13 +34,27 @@ public class InputManager : MonoBehaviour
     {
         if (context.performed)
         {
-            Debug.Log("Ctrl was pressed");
             _ctrlPressed = true;
         }
         else if (context.canceled)
         {
-            Debug.Log("Ctrl was released");
             _ctrlPressed = false;
+        }
+    }
+
+    public void SDown(InputAction.CallbackContext context)
+    {
+        if (context.performed && _ctrlPressed)
+        {
+            OnSave.Invoke();
+        }
+    }
+
+    public void ZDown(InputAction.CallbackContext context)
+    {
+        if (true)
+        {
+
         }
     }
 }

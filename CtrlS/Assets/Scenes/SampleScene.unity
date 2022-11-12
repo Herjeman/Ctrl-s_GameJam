@@ -450,18 +450,30 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1582153522}
+        m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
+        m_MethodName: CtrlPressed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 15747769-2fb0-4160-8504-622154670b56
     m_ActionName: DefaultActionMap/Control[/Keyboard/ctrl]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: aa41b982c36a63340bc5b8101f67608d, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1582153522}
+        m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
+        m_MethodName: SDown
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -469,6 +481,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: c2d39425-2d10-456b-911d-87c6e3a88e80
     m_ActionName: DefaultActionMap/S[/Keyboard/s]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1582153522}
+        m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
+        m_MethodName: ZDown
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: fc0b0db1-b715-482d-afb9-4373e26769e9
+    m_ActionName: DefaultActionMap/Z[/Keyboard/z]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: DefaultActionMap

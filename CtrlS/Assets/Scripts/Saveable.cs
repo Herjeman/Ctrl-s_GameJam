@@ -16,6 +16,7 @@ public class Saveable : MonoBehaviour
     private void SaveTransform()
     {
         _savedTransform = this.transform;
+        Debug.Log("Saved a piece of the world at: " + _savedTransform.position);
     }
 
     private void LoadTransform()
