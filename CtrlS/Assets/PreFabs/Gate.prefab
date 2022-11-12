@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 491058261667576930}
   - component: {fileID: 360800712833587562}
   - component: {fileID: 2611811723125690424}
+  - component: {fileID: 2192144204177743561}
   m_Layer: 0
   m_Name: Gate
   m_TagString: Untagged
@@ -108,7 +109,7 @@ Animator:
   m_GameObject: {fileID: 9177289660042319624}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 267c7ebf27d8a0a4187fcb9a3a95c5e1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -118,3 +119,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2192144204177743561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9177289660042319624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19050ef5554679e45aaa18ccf7acdc66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
