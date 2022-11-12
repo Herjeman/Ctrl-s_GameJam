@@ -10,6 +10,10 @@ public class InputManager : MonoBehaviour
     private bool _ctrlPressed;
     [SerializeField] private PlayerMovement _playerMovement;
 
+    public delegate void InputManagerEvent();
+    public static event InputManagerEvent OnSave;
+    public static event InputManagerEvent OnLoad;
+
     private void Awake()
     {
         if (instance == null)
@@ -22,9 +26,6 @@ public class InputManager : MonoBehaviour
         }
     }
 
-    public delegate void InputManagerEvent();
-    public static event InputManagerEvent OnSave;
-    public static event InputManagerEvent OnLoad;
 
     public void CtrlPressed(InputAction.CallbackContext context)
     {
