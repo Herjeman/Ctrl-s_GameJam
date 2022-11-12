@@ -8,15 +8,19 @@ using UnityEngine.PlayerLoop;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody _playerRb;
+    private CircleCollider2D _playerFeet;
     private PlayerInput _playerIp;
     private float _xAxis;
-
+    
+    [SerializeField] private LayerMask _whatIsGround;
+    [SerializeField] private Transform _groundCheck;
     [SerializeField] private int _jumpForce, _moveSpeed;
 
     private void Awake()
     {
         _playerRb = GetComponent<Rigidbody>();
         _playerIp = GetComponent<PlayerInput>();
+        _playerFeet = GetComponent<CircleCollider2D>();
     }
 
     private void FixedUpdate()
@@ -32,13 +36,21 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
-        _playerRb.velocity = new Vector2(_xAxis * _moveSpeed, _playerRb.velocity.y);
+        if (IsGrounded())
+        {
+            _playerRb.velocity = new Vector2(_xAxis * _moveSpeed, _playerRb.velocity.y);
+        }
     }
     
     public void SetMoveAxis(float axis)
     {
         _xAxis = axis;
         Debug.Log(_xAxis);
+    }
+    
+    public bool IsGrounded()
+    {
+        return Physics.CheckSphere(_groundCheck.position, 0.1f, _whatIsGround);
     }
     
     // public void MoveRight()
