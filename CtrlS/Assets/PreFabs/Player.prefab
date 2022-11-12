@@ -133,11 +133,7 @@ MonoBehaviour:
     m_Bits: 128
   _groundCheck: {fileID: 8332730911247391686}
   _jumpForce: 5
-<<<<<<< Updated upstream
   _moveSpeed: 4
-=======
-  _moveSpeed: 5
->>>>>>> Stashed changes
 --- !u!1 &6157587745511510402
 GameObject:
   m_ObjectHideFlags: 0
