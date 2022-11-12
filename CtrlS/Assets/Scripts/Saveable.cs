@@ -5,26 +5,30 @@ using UnityEngine.InputSystem;
 
 public class Saveable : MonoBehaviour
 {
-    private Transform _savedTransform;
+    private Vector3 _savedPosition;
 
     private void Awake()
     {
         InputManager.OnSave += SaveTransform;
         InputManager.OnLoad += LoadTransform;
+
+        _savedPosition = transform.position;
     }
 
     private void SaveTransform()
     {
-        _savedTransform = this.transform;
-        Debug.Log("Saved a piece of the world at: " + _savedTransform.position);
+        _savedPosition = this.transform.position;
+        Debug.Log("Saved a piece of the world at: " + _savedPosition);
     }
 
     private void LoadTransform()
     {
-        this.transform.position = _savedTransform.position;
-        this.transform.rotation = _savedTransform.rotation;
-        this.transform.localScale = _savedTransform.localScale;
-        Debug.Log("Restored the world");
+        if (_savedPosition == null)
+        {
+            return;
+        }
+        this.transform.position = _savedPosition;
+        Debug.Log("Restored a piece of the world to: " + _savedPosition);
     }
 
     private void OnDestroy()
