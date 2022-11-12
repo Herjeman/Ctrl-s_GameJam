@@ -135,7 +135,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: 0389b994-1842-409a-854e-b4d5757403f8
-    m_ActionName: DefaultActionMap/Jump
+    m_ActionName: DefaultActionMap/Jump[/Keyboard/space]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5168920551888554722}
