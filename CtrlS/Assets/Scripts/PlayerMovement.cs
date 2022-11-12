@@ -54,6 +54,10 @@ public class PlayerMovement : MonoBehaviour
         {
             other.gameObject.GetComponent<Gate>().Cycle();
         }
+        else if (other.gameObject.CompareTag("Lever"))
+        {
+            other.gameObject.GetComponent<Lever>().Switch();
+        }
     }
 
     public bool IsGrounded()

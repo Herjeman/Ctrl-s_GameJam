@@ -177,9 +177,10 @@ GameObject:
   - component: {fileID: 6947362118068519348}
   - component: {fileID: 2814825581947967172}
   - component: {fileID: 7898087190803557438}
+  - component: {fileID: 8731640852632944151}
   m_Layer: 0
   m_Name: Lever
-  m_TagString: Untagged
+  m_TagString: Lever
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -211,7 +212,7 @@ Animator:
   m_GameObject: {fileID: 9222412871264650885}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6df9791e4a456fa4c8f1b56b36e45058, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -234,3 +235,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9135666, z: 1}
   m_Center: {x: 0, y: 0.33400798, z: 0}
+--- !u!114 &8731640852632944151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9222412871264650885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3681ecd23668c843bd60c24596a92ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gate: {fileID: 0}
