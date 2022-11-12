@@ -5,26 +5,21 @@ using UnityEngine.InputSystem;
 
 public class InputManager : MonoBehaviour
 {
-    private static InputManager _instance;
+    public static InputManager instance;
 
     private bool _ctrlPressed;
     [SerializeField] private PlayerMovement _playerMovement;
 
     private void Awake()
     {
-        if (_instance == null)
+        if (instance == null)
         {
-            _instance = this;
+            instance = this;
         }
         else
         {
             Destroy(this);
         }
-    }
-
-    public static InputManager GetInstance()
-    {
-        return _instance; 
     }
 
     public delegate void InputManagerEvent();
