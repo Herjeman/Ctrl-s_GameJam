@@ -24,6 +24,7 @@ public class Saveable : MonoBehaviour
         this.transform.position = _savedTransform.position;
         this.transform.rotation = _savedTransform.rotation;
         this.transform.localScale = _savedTransform.localScale;
+        Debug.Log("Restored the world");
     }
 
     private void OnDestroy()

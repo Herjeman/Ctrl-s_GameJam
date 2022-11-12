@@ -52,9 +52,9 @@ public class InputManager : MonoBehaviour
 
     public void ZDown(InputAction.CallbackContext context)
     {
-        if (true)
+        if (context.performed && _ctrlPressed)
         {
-
+            OnLoad.Invoke();
         }
     }
 }
