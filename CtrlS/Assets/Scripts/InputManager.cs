@@ -31,8 +31,8 @@ public class InputManager : MonoBehaviour
     {
         if (context.performed)
         {
-            Debug.Log("Ctrl Down");
-            _soundManager.PlaySound();
+            //Debug.Log("Ctrl Down");
+            //_soundManager.PlaySound();
             _ctrlPressed = true;
         }
         else if (context.canceled)
