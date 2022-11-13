@@ -27,6 +27,7 @@ public class Gate : MonoBehaviour
     public void Cycle()
     {
         if (_isLocked) return;
+        _sm.TeleportSFX();
         _animator.SetTrigger("CycleGate");
     }
 

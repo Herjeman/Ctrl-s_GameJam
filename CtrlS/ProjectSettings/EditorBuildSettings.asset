@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene_Six.unity
     guid: 5db56dd6e45040a4c82254a5ad7d8551
+  - enabled: 1
+    path: Assets/Scenes/ThxForPlaying.unity
+    guid: a35ceed4dc708844b9e1dce03c469d27
   m_configObjects: {}

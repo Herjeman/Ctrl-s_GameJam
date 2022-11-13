@@ -43,6 +43,7 @@ public class InputManager : MonoBehaviour
     {
         if (context.performed && _ctrlPressed)
         {
+            _soundManager.CtrlSSFX();
             OnSave.Invoke();
         }
     }
@@ -51,6 +52,7 @@ public class InputManager : MonoBehaviour
     {
         if (context.performed && _ctrlPressed)
         {
+            _soundManager.CtrlZSFX();
             OnLoad.Invoke();
         }
     }
