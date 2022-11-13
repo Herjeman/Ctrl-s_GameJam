@@ -19,7 +19,7 @@ public class Gate : MonoBehaviour
 
     public void Unlock()
     {
-        
+        _sm.PuzzleSolvedSFX();
         _animator.SetTrigger("UnlockGate");
         _isLocked = false;
     }
