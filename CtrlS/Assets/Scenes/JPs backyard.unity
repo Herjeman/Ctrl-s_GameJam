@@ -744,30 +744,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8856057495302144486, guid: a1ae0547de4d6cd4599186377ace99eb,
-        type: 3}
-      propertyPath: _jump
-      value: 
-      objectReference: {fileID: 8300000, guid: 80736b73ad4c86948bfb70a952c58199, type: 3}
-    - target: {fileID: 8856057495302144486, guid: a1ae0547de4d6cd4599186377ace99eb,
-        type: 3}
-      propertyPath: _ctrlS
-      value: 
-      objectReference: {fileID: 8300000, guid: 538b119f67e013d4c9214a7eb0a06fe5, type: 3}
-    - target: {fileID: 8856057495302144486, guid: a1ae0547de4d6cd4599186377ace99eb,
-        type: 3}
-      propertyPath: _ctrlZ
-      value: 
-      objectReference: {fileID: 8300000, guid: bd9d1b5d5ba558f48acb20be7c359b63, type: 3}
-    - target: {fileID: 8856057495302144486, guid: a1ae0547de4d6cd4599186377ace99eb,
-        type: 3}
-      propertyPath: _teleport
-      value: 
-      objectReference: {fileID: 8300000, guid: 0dae825fea876e349bfe2ce37a35a3e8, type: 3}
-    - target: {fileID: 8856057495302144486, guid: a1ae0547de4d6cd4599186377ace99eb,
-        type: 3}
-      propertyPath: _puzzleSolved
-      value: 
-      objectReference: {fileID: 8300000, guid: 6d46912444cf503498899b5331d99760, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1ae0547de4d6cd4599186377ace99eb, type: 3}
