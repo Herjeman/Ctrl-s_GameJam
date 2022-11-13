@@ -12,7 +12,10 @@ public class SoundManager : MonoBehaviour
     {
         _audioSource.PlayOneShot(Jump);
     }
-
+    public void PuzzleSolvedSFX()
+    {
+        _audioSource.PlayOneShot(PuzzleSolved);
+    }
     private void Start()
     {
         _audioSource = GetComponent<AudioSource>();
