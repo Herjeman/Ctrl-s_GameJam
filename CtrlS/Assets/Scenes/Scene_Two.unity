@@ -1221,6 +1221,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35e73d86c82b2d447aabd931fd750341, type: 3}
+--- !u!1 &1920310635 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4958068200223305560, guid: 903098f60b03c9b499a672b139f21ca2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1012884852976640088}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1925292387
 GameObject:
   m_ObjectHideFlags: 0
@@ -1273,6 +1279,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 16214672}
     m_Modifications:
+    - target: {fileID: 815086101314747411, guid: 903098f60b03c9b499a672b139f21ca2,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 1d2b0674ba583b4409b99c28e7a10ebf,
+        type: 2}
     - target: {fileID: 2982689405152192210, guid: 903098f60b03c9b499a672b139f21ca2,
         type: 3}
       propertyPath: m_RootOrder
@@ -1328,6 +1340,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3977710632373848247, guid: 903098f60b03c9b499a672b139f21ca2,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 1d2b0674ba583b4409b99c28e7a10ebf,
+        type: 2}
     - target: {fileID: 4958068200223305560, guid: 903098f60b03c9b499a672b139f21ca2,
         type: 3}
       propertyPath: m_Name
@@ -1341,3 +1359,17 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1012884852976640088}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1012884852976640090
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920310635}
+  m_Material: {fileID: 13400000, guid: 1d2b0674ba583b4409b99c28e7a10ebf, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}

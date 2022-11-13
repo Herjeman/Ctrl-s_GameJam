@@ -46,10 +46,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _jump: {fileID: 8300000, guid: 80736b73ad4c86948bfb70a952c58199, type: 3}
+  _jumpVolume: 0.5
   _puzzleSolved: {fileID: 8300000, guid: 6d46912444cf503498899b5331d99760, type: 3}
+  _puzzleSolvedVolume: 0.304
   _ctrlS: {fileID: 8300000, guid: 538b119f67e013d4c9214a7eb0a06fe5, type: 3}
+  _ctrlSvolume: 0.298
   _ctrlZ: {fileID: 8300000, guid: bd9d1b5d5ba558f48acb20be7c359b63, type: 3}
+  _ctrlZvolume: 0.33
   _teleport: {fileID: 8300000, guid: 0dae825fea876e349bfe2ce37a35a3e8, type: 3}
+  _Teleportvolume: 0.1
 --- !u!82 &8856057495302144487
 AudioSource:
   m_ObjectHideFlags: 0

@@ -12,23 +12,28 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private AudioClip _teleport;
     private AudioSource _audioSource;
 
+    
     public void JumpSFX()
     {
         _audioSource.PlayOneShot(_jump);
     }
-    public void PuzzleSolvedSFX()
+
+        public void PuzzleSolvedSFX()
     {
         _audioSource.PlayOneShot(_puzzleSolved);
     }
-    public void CtrlSSFX()
+
+        public void CtrlSSFX()
     {
         _audioSource.PlayOneShot(_ctrlS);
     }
-    public void CtrlZSFX()
-    {
+
+       public void CtrlZSFX()
+    {        
         _audioSource.PlayOneShot(_ctrlZ);
     }
-    public void TeleportSFX()
+
+       public void TeleportSFX()
     {
         _audioSource.PlayOneShot(_teleport);
     }
