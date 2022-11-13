@@ -5,6 +5,7 @@ using UnityEngine;
 public class Gate : MonoBehaviour
 {
     private Animator _animator;
+    [SerializeField] private SoundManager _sm;
     public bool _isLocked;
 
     private void Awake()
@@ -18,6 +19,7 @@ public class Gate : MonoBehaviour
 
     public void Unlock()
     {
+        
         _animator.SetTrigger("UnlockGate");
         _isLocked = false;
     }
