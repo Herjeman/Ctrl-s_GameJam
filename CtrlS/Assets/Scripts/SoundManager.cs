@@ -4,19 +4,17 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    [SerializeField] private AudioClip _sound1;
+    [SerializeField] private AudioClip Jump;
+    [SerializeField] private AudioClip PuzzleSolved;
     private AudioSource _audioSource;
 
-    public void PlaySound()
+    public void JumpSFX()
     {
-        _audioSource.PlayOneShot(_sound1);
+        _audioSource.PlayOneShot(Jump);
     }
+
     private void Start()
     {
         _audioSource = GetComponent<AudioSource>();
-    }
-    void Update()
-    {
-        
     }
 }

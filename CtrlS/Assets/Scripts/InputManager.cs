@@ -31,8 +31,6 @@ public class InputManager : MonoBehaviour
     {
         if (context.performed)
         {
-            //Debug.Log("Ctrl Down");
-            //_soundManager.PlaySound();
             _ctrlPressed = true;
         }
         else if (context.canceled)
@@ -61,6 +59,7 @@ public class InputManager : MonoBehaviour
     {
         if (context.performed)
         {
+            _soundManager.JumpSFX();
             _playerMovement.Jump();
         }
     }
