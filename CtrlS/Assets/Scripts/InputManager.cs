@@ -9,7 +9,7 @@ public class InputManager : MonoBehaviour
 
     private bool _ctrlPressed;
     [SerializeField] private PlayerMovement _playerMovement;
-
+    [SerializeField] private SoundManager _soundManager;
     public delegate void InputManagerEvent();
     public static event InputManagerEvent OnSave;
     public static event InputManagerEvent OnLoad;
@@ -31,6 +31,8 @@ public class InputManager : MonoBehaviour
     {
         if (context.performed)
         {
+            Debug.Log("Ctrl Down");
+            _soundManager.PlaySound();
             _ctrlPressed = true;
         }
         else if (context.canceled)
