@@ -708,11 +708,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2979456841118601039, guid: e0b61c641d6d6f14389f9be31e600d67,
         type: 3}
-      propertyPath: _moveSpeed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2979456841118601039, guid: e0b61c641d6d6f14389f9be31e600d67,
-        type: 3}
       propertyPath: _whatIsGround.m_Bits
       value: 128
       objectReference: {fileID: 0}
